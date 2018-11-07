@@ -1,0 +1,26 @@
+{
+  "name": "repons_navbar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.10.0",
+    "yarn": "^1.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass sass/main.scss css/main.css",
+    "css:compile": "yarn css -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/symphonySpy/navbar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/symphonySpy/navbar/issues"
+  },
+  "homepage": "https://github.com/symphonySpy/navbar#readme"
+}

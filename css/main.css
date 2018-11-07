@@ -1,0 +1,130 @@
+.navbar {
+  margin: 0%;
+  padding: 0%;
+  top: 0%;
+  width: 100%;
+  position: fixed;
+  background-color: #212121;
+  overflow: auto; }
+  .navbar .boxmenu {
+    float: right;
+    position: relative;
+    left: -50%;
+    /* or right 50% */ }
+    .navbar .boxmenu ul {
+      list-style-type: none;
+      overflow: hidden;
+      position: relative;
+      left: 50%; }
+      .navbar .boxmenu ul li {
+        float: left; }
+        .navbar .boxmenu ul li a {
+          text-decoration: none;
+          text-align: center;
+          padding: 1.2em 1.5em;
+          display: block;
+          color: #fff; }
+        .navbar .boxmenu ul li a:hover:not(.active) {
+          background-color: #c7c7c7;
+          color: #000; }
+        .navbar .boxmenu ul li .active {
+          background-color: #000; }
+        .navbar .boxmenu ul li .iconnavbar {
+          display: none; }
+        .navbar .boxmenu ul li .dropdown ul {
+          list-style-type: none;
+          display: none;
+          background-color: #212121;
+          left: auto;
+          position: fixed;
+          overflow: auto; }
+          .navbar .boxmenu ul li .dropdown ul li {
+            float: none; }
+            .navbar .boxmenu ul li .dropdown ul li a {
+              color: #fff;
+              padding: 1.1em 1em; }
+            .navbar .boxmenu ul li .dropdown ul li a:hover {
+              color: #000;
+              background-color: #c7c7c7; }
+        .navbar .boxmenu ul li .dropdown:hover .dropdown-menu {
+          display: block; }
+      .navbar .boxmenu ul .icon {
+        padding: 0px 10px; }
+        .navbar .boxmenu ul .icon .logo {
+          width: 3.1em;
+          margin-top: 2.5%;
+          cursor: pointer;
+          padding-right: 1.5em; }
+
+@media screen and (max-width: 768px) {
+  .navbar .boxmenu {
+    width: 100%;
+    left: 0;
+    float: none; }
+    .navbar .boxmenu ul {
+      width: 100%;
+      left: 0;
+      text-align: center; }
+      .navbar .boxmenu ul li:not(:first-child) {
+        width: 100%;
+        float: none; }
+        .navbar .boxmenu ul li:not(:first-child) a {
+          display: none; }
+        .navbar .boxmenu ul li:not(:first-child) .iconnavbar {
+          float: right;
+          display: block;
+          font-size: 0.7em; }
+          .navbar .boxmenu ul li:not(:first-child) .iconnavbar .fa-bars {
+            font-size: 3em; }
+        .navbar .boxmenu ul li:not(:first-child) .changemode {
+          display: none; }
+      .navbar .boxmenu ul .icon .logo {
+        margin-top: 0.5%;
+        width: 3.3em;
+        cursor: pointer;
+        position: absolute; } }
+
+.navbar .boxmenu .responsive {
+  position: relative; }
+
+.navbar .boxmenu .responsive .iconbar {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.navbar .boxmenu .responsive li:not(:first-child) a {
+  display: block; }
+
+.navbar .boxmenu .responsive li:first-child {
+  float: none;
+  text-align: left; }
+  @media screen and (max-width: 768px) {
+    .navbar .boxmenu .responsive li:first-child {
+      margin-bottom: 10%; } }
+  @media screen and (max-width: 425px) {
+    .navbar .boxmenu .responsive li:first-child {
+      margin-bottom: 16%; } }
+  @media screen and (max-width: 375px) {
+    .navbar .boxmenu .responsive li:first-child {
+      margin-bottom: 18%; } }
+  @media screen and (max-width: 320px) {
+    .navbar .boxmenu .responsive li:first-child {
+      margin-bottom: 20%; } }
+
+.navbar .boxmenu .responsive li a {
+  float: none;
+  text-align: left; }
+
+.navbar .boxmenu .responsive li .iconnavbar {
+  float: right;
+  display: block;
+  font-size: 0.7em; }
+  .navbar .boxmenu .responsive li .iconnavbar .fa-bars {
+    font-size: 3em; }
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
